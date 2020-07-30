@@ -4,7 +4,6 @@
   "description": "Birthday greetings..",
   "main": " ",
   "scripts": {
-   
     "server-node": "http-server -p 8081"
   },
   "repository": {
@@ -13,7 +12,7 @@
   "keywords": [
     "Birthday"
   ],
-  "author": "Ayush Sharma",
+ 
   "license": "WTFPL",
   "dependencies": {
     "http-server": "^0.11.1"
