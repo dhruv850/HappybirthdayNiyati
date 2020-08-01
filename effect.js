@@ -1,6 +1,7 @@
 $(window).load(function(){
 	$('.loading').fadeOut('fast');
 	$('.container').fadeIn('fast');
+	
 });
 $('document').ready(function(){
 		var vw;
@@ -17,6 +18,7 @@ $('document').ready(function(){
 		});
 
 	$('#turn_on').click(function(){
+	
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
 		$('#bulb_blue').addClass('bulb-glow-blue');
@@ -24,7 +26,7 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-		$(this).fadeOut('slow').delay(500).promise().done(function(){
+		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
 	});
@@ -39,14 +41,14 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(600).promise().done(function(){
+		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(600).promise().done(function(){
+		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
 	});
@@ -173,7 +175,7 @@ $('document').ready(function(){
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
-					$('.balloon-border').animate({top:200},8000);
+					$('#surprise').fadeIn('slow');
 				});
 				
 			}
@@ -188,6 +190,35 @@ $('document').ready(function(){
 		msgLoop(0);
 		
 	});
+	$('#surprise').click(function(){
+		$(this).fadeOut('slow');
+		$('.cake').fadeOut('slow');
+		
+		$('#light_candle').fadeOut('slow');
+		$('.fuego').fadeOut('slow');
+	   $('.container1').css({"width":"100%",	
+		"align-items": "center",
+		"justify-content": "center",
+		"display":"flex",
+		"flex-direction": "row",
+		"flex-wrap":"wrap"});
+		$('.container1 .box .details .content').css({"position": "absolute",
+			"top": "50%",
+			"transform": "translateY(-50%)",
+			"text-align": "center",
+			"padding": "0px",
+			"color": "#fff"});
+			$('.container1 .box .details .content p').css({
+				"margin":"10px p p",
+	"padding":"0"});
+	$('.balloons').css({
+		"position":"absolute",
+});
+	
+	    $('.container1').fadeIn(3000);
+	   
+   });
+
 });
 
 

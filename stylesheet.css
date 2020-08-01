@@ -12,6 +12,7 @@ body {
 .container {
 	display: none;
 }
+
 .peach {
 	background-color: #FFDAB9;
 	
@@ -1264,7 +1265,7 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
+#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story,#surprise{
 	display: none;
 }
 
@@ -1302,7 +1303,75 @@ audio {
         border-color: #fff;
         color: #fff;
         background-color: #466baf;
-    }
+	}
+	.container1 
+{	
+	display: none;
+	
+}
+.container1 .box 
+{
+
+	position: relative;
+	width:270px;
+	height: 270px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.container1 .box .imgBox 
+{
+     position: relative;
+     overflow: hidden;
+}
+.container1 .box .imgBox img
+{
+    object-fit: cover; width: 270px; height: 270px;
+    transition: transform 2s;
+    
+}
+.container1 .box:hover .imgBox img 
+{
+    transform: scale(1.2);
+}
+.container1 .box .details
+{   
+    
+    position: absolute;
+    top: 10px;
+    left:10px;
+    bottom:10px;
+    right:10px;
+    background: rgba(0,0,0,.4);
+    transform: scaleY(0);
+    transition: transform .5s;
+
+}
+.container1 .box:hover .details
+{      
+    transform: scaleY(1);
+
+}
+.container1 .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0px;
+    color: #fff;
+}
+.container1 .box .details .content h2{
+    margin:0;
+    padding:0;
+    font-size: 20px;
+    color:#ff0;
+}
+.container1 .box .details .content h3{
+    margin:10px p p;
+	padding:0;
+	font-size: 20px;
+}
 
 
 
@@ -1326,4 +1395,9 @@ audio {
 			color: #BF4136;
 			text-shadow: 5px 5px 5px #FFF;
 			display: none;
-    }
+	}
+	.cake-cover {
+		margin-top: 50px;
+		
+	}
+}
