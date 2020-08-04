@@ -169,11 +169,11 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(1600).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('fast').delay(8).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(2000);
+			$("p:nth-child("+i+")").fadeIn('fast').delay(10);
 			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+				$("p:nth-child(49)").fadeOut('fast').promise().done(function () {
 					$('.cake').fadeIn('fast');
 					$('#surprise').fadeIn('slow');
 				});
